@@ -1,0 +1,68 @@
+# Zathura configuration file
+# See man `man zathurarc'
+
+# Open document in fit-width mode by default
+set adjust-open "best-fit"
+set recolor true
+
+# One page per row by default
+set pages-per-row 1
+
+#stop at page boundries
+set scroll-page-aware "true"
+set smooth-scroll "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+#zoom settings
+set zoom-min 10
+set guioptions ""
+
+# Light/Default mode settings:
+# 
+#
+set notification-error-bg       "#f4005f" # Red
+set notification-error-fg       "#f6f6ef" # Foreground
+set notification-warning-bg     "#fa8419" # Orange
+set notification-warning-fg     "#1a1a1a" # Selection
+set notification-bg             "#303030" # Background
+set notification-fg             "#f6f6ef" # Foreground
+
+set completion-bg               "#1a1a1a" # Background
+set completion-fg               "#f6f6ef" # Comment
+set completion-group-bg         "#1a1a1a" # Background
+set completion-group-fg         "#98e924" # Comment
+set completion-highlight-bg     "#fd5ff0" # Selection
+set completion-highlight-fg     "#1a1a1a" # Foreground
+
+set index-bg                    "#1a1a1a" # Background
+set index-fg                    "#f6f6ef" # Foreground
+set index-active-bg             "#9d65ff" # Current Line
+set index-active-fg             "#1a1a1a" # Foreground
+
+set inputbar-bg                 "#303030" # Background
+set inputbar-fg                 "#f6f6ef" # Foreground
+set statusbar-bg                "#303030" # Background
+set statusbar-fg                "#f6f6ef" # Foreground
+
+set highlight-color             "#fa8419" # Orange
+set highlight-active-color      "#fd5ff0" # Pink
+
+set default-bg                  "#1a1a1a" # Background
+set default-fg                  "#f6f6ef" # Foreground
+
+set render-loading              true
+set render-loading-fg           "#1a1a1a" # Background
+set render-loading-bg           "#f6f6ef" # Foreground
+
+# Recolor mode settings
+#
+#
+set recolor-lightcolor          "#1a1a1a" # Background
+set recolor-darkcolor           "#f6f6ef" # Foreground
+
+set render-loading "false"
+set scroll-step 50
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
